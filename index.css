@@ -1,0 +1,269 @@
+.logo img {
+    border-radius: 50px;
+    box-shadow: 0 0 20px white;
+    width: 130px;
+    height: 130px;
+  }
+  
+  .hamburguesa {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 95, 13);
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .idiomas ul {
+    cursor: pointer;
+  
+    color: white;
+  }
+  .idiomas ul li {
+    cursor: pointer;
+    color: white;
+  }
+  .idiomas ul li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+  
+  .idiomas ul li:hover > ul {
+    padding-top: 10px;
+    padding-right: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  a:hover {
+    background-color: #434343;
+  }
+  .idiomas a {
+    color: black;
+    text-decoration: none;
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px 10px;
+  }
+  nav a {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: grey;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+  
+    display: block;
+  }
+  
+  nav li ul a {
+    background-color: lightblue;
+  }
+  nav li a:hover {
+    background-color: #434343;
+  }
+  nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+  }
+  
+  nav li:hover > ul {
+    display: block;
+    right: 20px;
+  }
+  
+  main {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .productomasVendido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: baseline;
+    align-items: center;
+    border: 2px solid rgba(150, 111, 111, 0.636);
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+  }
+  .productomasVendido img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .masVisitados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(119, 13, 13);
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+  }
+  
+  .masVisitados table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .masVisitados th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .masVisitados th {
+    background-color: #f2f2f2;
+  }
+  .masVisitados tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .tendenciasDecoracion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(76, 129, 16);
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+  }
+  .tendenciasDecoracion img {
+    width: 300px;
+    height: 200px;
+  }
+  /* Estilos para el título de los artículos */
+  .tendenciasDecoracion h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el texto de los artículos */
+  .tendenciasDecoracion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    padding: 0 20px 0 20px;
+  }
+  
+  .FormularioOpiniones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(12, 99, 68);
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+  }
+  .FormularioOpiniones form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .FormularioOpiniones fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .FormularioOpiniones legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .FormularioOpiniones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .FormularioOpiniones label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .FormularioOpiniones input[type="text"],
+  .FormularioOpiniones input[type="email"],
+  .FormularioOpiniones select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(14, 58, 235, 0.815);
+    width: 100%;
+  }
+  
+  .FormularioOpiniones select {
+    padding-right: 24px;
+  }
+  
+  .FormularioOpiniones button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(9, 248, 77, 0.619);
+    background-color: #e0d7d7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .FormularioOpiniones button:hover {
+    background-color: #a9a0a0;
+  }
+  
+  @media (min-width: 768px) {
+    nav {
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .idiomas {
+      display: none;
+    }
+    .hamburguesa {
+      display: block;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none;
+    }
+    ul {
+      display: block;
+    }
+    nav li:hover > ul {
+      display: block;
+      top: 87.5px;
+      right: 180px;
+    }
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
